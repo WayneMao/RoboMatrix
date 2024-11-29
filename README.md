@@ -1,5 +1,3 @@
-# RoboMatrix-ROS2
-
 <div align="center">
     <img src="resources\robomatrix-logo3.png" alt="logo" width="70%">
 </div>
@@ -30,5 +28,5 @@ If you find our work helpful, please cite us:
 
 ## Acknowledgments
 - Implementation of Vision-Language-Action (VLA) skill model is based on [LLaVA](https://github.com/haotian-liu/LLaVA/).  
-- RoboMatrix-ROS is based on [RoboMaster-SDK](https://github.com/dji-sdk/RoboMaster-SDK) and ROS2.
+- RoboMatrix-ROS is based on [RoboMaster-SDK](https://github.com/dji-sdk/RoboMaster-SDK) and [ROS2](https://github.com/ros2).
 - Some additional libraries: [Grounding-DINO-1.5](https://github.com/IDEA-Research/Grounding-DINO-1.5-API), [YOLO-World](https://github.com/AILab-CVC/YOLO-World).
