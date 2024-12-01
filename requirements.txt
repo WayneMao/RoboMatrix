@@ -1,0 +1,28 @@
+# langchain==0.0.225
+# openai==0.27.7
+matplotlib==3.7.1
+numpy==1.24.3
+rich
+PyYAML==6.0.1
+openai==1.35.14
+langchain==0.2.8
+langchain-community==0.2.0
+langchain-core==0.2.20
+langchain-openai==0.1.16
+langchain-text-splitters==0.2.2
+langsmith==0.1.88
+# langserve==0.2.2  
+# pip install "langserve[all]"
+
+# torch==2.0.1
+
+pyquaternion==0.9.9
+
+# Joystick Control dependencies
+pygame
+
+dds-cloudapi-sdk==0.2.1
+gradio==4.22.0
+scipy
+noisereduce
+assemblyai

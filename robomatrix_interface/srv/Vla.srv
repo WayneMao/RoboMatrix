@@ -1,0 +1,5 @@
+int32 task
+string msg
+---
+bool success
+string msg

@@ -1,1 +1,8 @@
 README_zh-CN_old.md
+*.jpg
+*.png
+*.pt
+*.mp4
+*.wav
+__pycache__/
+Grounding-DINO-1.5-API/
