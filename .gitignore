@@ -1,6 +1,7 @@
 README_zh-CN_old.md
 README_old.md
-.vscode/
+.vscode
+.DS_Store
 *.jpg
 *.png
 *.pt
