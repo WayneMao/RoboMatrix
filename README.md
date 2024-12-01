@@ -12,6 +12,8 @@ English | [简体中文](README_zh-CN.md)
 
 ### 📝[Paper]() | 🌍[Project Page](https://robo-matrix.github.io/) | 🛢️[Data]()
   
+![eight_skills](resources/eight_skills.gif)
+
 ## 📰 News
 
 ## Installation
@@ -57,6 +59,14 @@ cd Grounding-DINO-1.5-API
 pip install -v -e .
 ```
 ## Deployment on Real-Robots
+
+## TODO
+- [ ] Package Docker
+- [ ] Release fine-tuning dataset
+- [ ] Optimize VLA ROS communication
+- [ ] Open source VLA Skill model code
+- [ ] Release VLA Skill model weights
+- [ ] Open source Shooting code
 
 ## Citation
 
