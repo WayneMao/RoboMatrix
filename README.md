@@ -15,7 +15,47 @@ English | [简体中文](README_zh-CN.md)
 ## 📰 News
 
 ## Installation
+### 1. Install ROS 2
 
+**Note: If ROS2 is already installed on your system, please skip this step.**
+
+**ROS2 distro for your Ubuntu**
+* Ubuntu 20.04 ---> ROS2 Foxy ---> [official installation guidance](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
+* Ubuntu 22.04 ---> ROS2 Humble ---> [official installation guidance](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
+
+**Install colcon**
+```bash
+sudo apt install python3-colcon-common-extensions
+```
+
+### 2. Build workspace
+```bash
+mkdir -p ~/RoboMatrix/src && cd ~/RoboMatrix/src
+git clone https://github.com/WayneMao/RoboMatrix.git
+cd ~/RoboMatrix && colcon build
+```
+
+### 3. Install dependencies
+```bash
+sudo apt install libopus-dev python3-pip
+python3 -m pip install -U numpy numpy-quaternion pyyaml
+
+# Install RoboMaster-SDK
+python3 -m pip install git+https://github.com/jeguzzi/RoboMaster-SDK.git
+python3 -m pip install git+https://github.com/jeguzzi/RoboMaster-SDK.git#"egg=libmedia_codec&subdirectory=lib/libmedia_codec"
+
+# install dependencies and torch
+pip install -r requirements.txt
+pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
+```
+### 4. Third party
+**Grounding-DINO-1.5-API**
+```bash
+cd src/robomatrix_client/robomatrix_client
+git clone https://github.com/IDEA-Research/Grounding-DINO-1.5-API.git
+cd Grounding-DINO-1.5-API
+pip install -v -e .
+```
 ## Deployment on Real-Robots
 
 ## Citation
