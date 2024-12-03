@@ -18,8 +18,9 @@ English | [简体中文](README_zh-CN.md)
 
 ## Demo
 ### Dynamic Adversarial Interaction
-<video src="https://robo-matrix.github.io/static/videos/crossing_obstacles_with_disturbance.mp4" controls="controls" style="max-width: 100%; height: auto;">
-</video>
+<!-- <video src="https://robo-matrix.github.io/static/videos/crossing_obstacles_with_disturbance.mp4" controls="controls" style="max-width: 100%; height: auto;">
+</video> -->
+https://private-user-images.githubusercontent.com/35285052/392064253-ff1d7e2a-8650-430d-a60e-15bffcc237e2.mp4
 
 ## Installation
 ### 1. Install ROS 2
