@@ -31,7 +31,7 @@ https://private-user-images.githubusercontent.com/35285052/392064253-ff1d7e2a-86
 * Ubuntu 20.04 ---> ROS2 Foxy ---> [official installation guidance](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
 * Ubuntu 22.04 ---> ROS2 Humble ---> [official installation guidance](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
 
-**Install colcon**
+**Install colcon tool**
 ```bash
 sudo apt install python3-colcon-common-extensions
 ```
