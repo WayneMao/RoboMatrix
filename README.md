@@ -10,7 +10,7 @@ English | [简体中文](README_zh-CN.md)
 
 # RoboMatrix: A Skill-centric Hierarchical Framework for Scalable Robot Task Planning and Execution in Open-World
 
-### 📝[Paper]() | 🌍[Project Page](https://robo-matrix.github.io/) | 🛢️[Data]()
+### 📝[Paper](https://arxiv.org/abs/2412.00171) | 🌍[Project Page](https://robo-matrix.github.io/) | 🛢️[Data]()
   
 ![eight_skills](resources/eight_skills.gif)
 
