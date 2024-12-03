@@ -73,7 +73,15 @@ pip install -v -e .
 If you find our work helpful, please cite us:
 
 ```bibtex
-
+@misc{mao2024robomatrixskillcentrichierarchicalframework,
+      title={RoboMatrix: A Skill-centric Hierarchical Framework for Scalable Robot Task Planning and Execution in Open-World}, 
+      author={Weixin Mao and Weiheng Zhong and Zhou Jiang and Dong Fang and Zhongyue Zhang and Zihan Lan and Fan Jia and Tiancai Wang and Haoqiang Fan and Osamu Yoshie},
+      year={2024},
+      eprint={2412.00171},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2412.00171}, 
+}
 ```
 
 ## Acknowledgments
