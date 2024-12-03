@@ -10,11 +10,16 @@ English | [简体中文](README_zh-CN.md)
 
 # RoboMatrix: A Skill-centric Hierarchical Framework for Scalable Robot Task Planning and Execution in Open-World
 
-### 📝[Paper](https://arxiv.org/abs/2412.00171) | 🌍[Project Page](https://robo-matrix.github.io/) | 🛢️[Data]()
+### 📝[Paper](https://arxiv.org/abs/2412.00171) | 🌍[Project Page](https://robo-matrix.github.io/) | 🛢️[Data](https://huggingface.co/datasets/WayneMao/RoboMatrix)
   
 ![eight_skills](resources/eight_skills.gif)
 
 ## 📰 News
+
+## Demo
+### Dynamic Adversarial Interaction
+<video src="https://robo-matrix.github.io/static/videos/crossing_obstacles_with_disturbance.mp4" controls="controls" style="max-width: 100%; height: auto;">
+</video>
 
 ## Installation
 ### 1. Install ROS 2
@@ -62,7 +67,7 @@ pip install -v -e .
 
 ## TODO
 - [ ] Package Docker
-- [ ] Release fine-tuning dataset
+- [X] Release Supervised Fine-tuning dataset
 - [ ] Optimize VLA ROS communication
 - [ ] Open source VLA Skill model code
 - [ ] Release VLA Skill model weights

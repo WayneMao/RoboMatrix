@@ -10,11 +10,16 @@
 
 # RoboMatrix: A Skill-centric Hierarchical Framework for Scalable Robot Task Planning and Execution in Open-World
 
-### 📝[论文]() | 🌍[项目主页](https://robo-matrix.github.io/) | 🛢️[数据]()
+### 📝[论文]() | 🌍[项目主页](https://robo-matrix.github.io/) | 🛢️[数据](https://huggingface.co/datasets/WayneMao/RoboMatrix)
 
 ![eight_skills](resources/eight_skills.gif)
 
 ## 📰 新闻
+
+## Demo
+### 动态对抗交互
+<video src="https://robo-matrix.github.io/static/videos/crossing_obstacles_with_disturbance.mp4" controls="controls" style="max-width: 100%; height: auto;">
+</video>
 
 ## 安装
 ### 1. 安装 ROS2
@@ -63,7 +68,7 @@ pip install -v -e .
 
 ## TODO
 - [ ] 打包Docker
-- [ ] 开放微调数据集
+- [x] 开放有监督微调数据集
 - [ ] 优化VLA ROS通信
 - [ ] 开源VLA Skill model代码
 - [ ] 开放VLA Skill Model权重
