@@ -93,3 +93,8 @@ If you find our work helpful, please cite us:
 - 视觉-语言-动作 (VLA) 技能模型的实现基于 [LLaVA](https://github.com/haotian-liu/LLaVA/)。  
 - RoboMatrix-ROS 基于 [RoboMaster-SDK](https://github.com/dji-sdk/RoboMaster-SDK) 和 [ROS2](https://github.com/ros2)。
 - 其他一些库包括：[Grounding-DINO-1.5](https://github.com/IDEA-Research/Grounding-DINO-1.5-API)、[YOLO-World](https://github.com/AILab-CVC/YOLO-World)。
+
+
+---
+微信群
+![alt text](image-1.png)
