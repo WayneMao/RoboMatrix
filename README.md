@@ -96,4 +96,4 @@ If you find our work helpful, please cite us:
 
 ---
 ## WeChat
-![alt text](image.png)
+![wechat](resources/WeChat/WechatIMG2.jpg)

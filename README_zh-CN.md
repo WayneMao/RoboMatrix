@@ -97,4 +97,4 @@ If you find our work helpful, please cite us:
 
 ---
 微信群
-![alt text](image-1.png)
+![wechat](resources/WeChat/WechatIMG2.jpg)
