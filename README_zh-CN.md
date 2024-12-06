@@ -23,7 +23,7 @@
 <!-- https://private-user-images.githubusercontent.com/35285052/392064253-ff1d7e2a-8650-430d-a60e-15bffcc237e2.mp4 -->
 https://private-user-images.githubusercontent.com/35285052/392642975-b78e28aa-45c2-4bb0-9e70-b6a08c678f85.mp4
 
-## 安装
+## 🛠️ 安装
 ### 1. 安装 ROS2
 
 **注意：如果您的系统上已安装 ROS2，请跳过此步骤。**
@@ -70,7 +70,7 @@ pip install -v -e .
 
 ## TODO
 - [ ] 打包Docker
-- [x] 开放有监督微调数据集
+- [x] 🤗 开放有监督微调数据集
 - [ ] 优化VLA ROS通信
 - [ ] 开源VLA Skill model代码
 - [ ] 开放VLA Skill Model权重
@@ -81,14 +81,11 @@ pip install -v -e .
 If you find our work helpful, please cite us:
 
 ```bibtex
-@misc{mao2024robomatrixskillcentrichierarchicalframework,
-      title={RoboMatrix: A Skill-centric Hierarchical Framework for Scalable Robot Task Planning and Execution in Open-World}, 
-      author={Weixin Mao and Weiheng Zhong and Zhou Jiang and Dong Fang and Zhongyue Zhang and Zihan Lan and Fan Jia and Tiancai Wang and Haoqiang Fan and Osamu Yoshie},
-      year={2024},
-      eprint={2412.00171},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2412.00171}, 
+@article{mao2024robomatrix,
+  title={RoboMatrix: A Skill-centric Hierarchical Framework for Scalable Robot Task Planning and Execution in Open-World},
+  author={Mao, Weixin and Zhong, Weiheng and Jiang, Zhou and Fang, Dong and Zhang, Zhongyue and Lan, Zihan and Jia, Fan and Wang, Tiancai and Fan, Haoqiang and Yoshie, Osamu},
+  journal={arXiv preprint arXiv:2412.00171},
+  year={2024}
 }
 ```
 

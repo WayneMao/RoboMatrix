@@ -23,7 +23,7 @@ English | [简体中文](README_zh-CN.md)
 <!-- https://private-user-images.githubusercontent.com/35285052/392064253-ff1d7e2a-8650-430d-a60e-15bffcc237e2.mp4 -->
 https://private-user-images.githubusercontent.com/35285052/392642975-b78e28aa-45c2-4bb0-9e70-b6a08c678f85.mp4
 
-## Installation
+## 🛠️ Installation
 ### 1. Install ROS 2
 
 **Note: If ROS2 is already installed on your system, please skip this step.**
@@ -69,7 +69,7 @@ pip install -v -e .
 
 ## TODO
 - [ ] Package Docker
-- [X] Release Supervised Fine-tuning dataset
+- [X] 🤗 Release Supervised Fine-tuning dataset
 - [ ] Optimize VLA ROS communication
 - [ ] Open source VLA Skill model code
 - [ ] Release VLA Skill model weights
@@ -80,14 +80,11 @@ pip install -v -e .
 If you find our work helpful, please cite us:
 
 ```bibtex
-@misc{mao2024robomatrixskillcentrichierarchicalframework,
-      title={RoboMatrix: A Skill-centric Hierarchical Framework for Scalable Robot Task Planning and Execution in Open-World}, 
-      author={Weixin Mao and Weiheng Zhong and Zhou Jiang and Dong Fang and Zhongyue Zhang and Zihan Lan and Fan Jia and Tiancai Wang and Haoqiang Fan and Osamu Yoshie},
-      year={2024},
-      eprint={2412.00171},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2412.00171}, 
+@article{mao2024robomatrix,
+  title={RoboMatrix: A Skill-centric Hierarchical Framework for Scalable Robot Task Planning and Execution in Open-World},
+  author={Mao, Weixin and Zhong, Weiheng and Jiang, Zhou and Fang, Dong and Zhang, Zhongyue and Lan, Zihan and Jia, Fan and Wang, Tiancai and Fan, Haoqiang and Yoshie, Osamu},
+  journal={arXiv preprint arXiv:2412.00171},
+  year={2024}
 }
 ```
 
