@@ -14,7 +14,10 @@
 
 ![eight_skills](resources/eight_skills.gif)
 
-## 📰 新闻
+<!-- ## 📰 新闻 -->
+
+## 发布
+- [2024/12/04] 🤗 发布RoboMatrix有监督微调数据集，该SFT数据集包含5000条高质量人类标注的演示视频。 [[数据](https://huggingface.co/datasets/WayneMao/RoboMatrix)]
 
 ## Demo
 ### 动态对抗交互
@@ -70,7 +73,7 @@ pip install -v -e .
 
 ## TODO
 - [ ] 打包Docker
-- [x] 🤗 开放有监督微调数据集
+- [x] 🤗 发布有监督微调数据集
 - [ ] 优化VLA ROS通信
 - [ ] 开源VLA Skill model代码
 - [ ] 开放VLA Skill Model权重
@@ -96,5 +99,5 @@ If you find our work helpful, please cite us:
 
 
 ---
-微信群
-![wechat](resources/WeChat/WechatIMG2.jpg)
+## 微信群
+<img src="resources/WeChat/WechatIMG2.jpg" alt="weichat" width=200><img src="resources/WeChat/WechatIMG3.jpg" alt="weichat" width=200>

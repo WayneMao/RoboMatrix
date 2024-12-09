@@ -14,7 +14,11 @@ English | [简体中文](README_zh-CN.md)
   
 ![eight_skills](resources/eight_skills.gif)
 
-## 📰 News
+<!-- ## 📰 News -->
+
+## Release
+
+- [2024/12/04] We have released the RoboMatrix supervised fine-tuning (SFT) dataset, which contains 5,000 high-quality human-annotated demonstration videos.
 
 ## Demo
 ### Dynamic Adversarial Interaction
@@ -96,5 +100,4 @@ If you find our work helpful, please cite us:
 
 ---
 ## WeChat
-<img src="resources/WeChat/WechatIMG2.jpg" alt="weichat" width=200>
-<img src="resources/WeChat/WechatIMG3.jpg" alt="weichat" width=200>
+<img src="resources/WeChat/WechatIMG2.jpg" alt="weichat" width=200><img src="resources/WeChat/WechatIMG3.jpg" alt="weichat" width=200>
