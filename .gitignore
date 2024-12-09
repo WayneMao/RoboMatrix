@@ -7,3 +7,8 @@ README_old.md
 *.wav
 __pycache__/
 Grounding-DINO-1.5-API/
+
+# ROS2
+build/
+install/
+log/
