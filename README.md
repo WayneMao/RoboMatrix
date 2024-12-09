@@ -96,4 +96,5 @@ If you find our work helpful, please cite us:
 
 ---
 ## WeChat
-![wechat](resources/WeChat/WechatIMG2.jpg)
+<img src="resources/WeChat/WechatIMG2.jpg" alt="weichat" width=200>
+<img src="resources/WeChat/WechatIMG3.jpg" alt="weichat" width=200>
