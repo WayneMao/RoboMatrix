@@ -17,7 +17,7 @@
 <!-- ## 📰 新闻 -->
 
 ## 发布
-- [2024/12/04] 🤗 发布RoboMatrix有监督微调数据集，该SFT数据集包含5000条高质量人类标注的演示视频。 [[数据](https://huggingface.co/datasets/WayneMao/RoboMatrix)]
+- [2024/12/04] 🤗 发布RoboMatrix有监督微调数据集，该SFT数据集包含1,500条高质量人类标注的演示视频。 [[数据](https://huggingface.co/datasets/WayneMao/RoboMatrix)]
 
 ## Demo
 ### 动态对抗交互

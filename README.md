@@ -18,7 +18,7 @@ English | [简体中文](README_zh-CN.md)
 
 ## Release
 
-- [2024/12/04] We have released the RoboMatrix supervised fine-tuning (SFT) dataset, which contains 5,000 high-quality human-annotated demonstration videos.
+- [2024/12/04] We have released the RoboMatrix supervised fine-tuning (SFT) dataset, which contains 1,500 high-quality human-annotated demonstration videos.
 
 ## Demo
 ### Dynamic Adversarial Interaction
