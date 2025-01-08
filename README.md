@@ -144,7 +144,9 @@ pip install -v -e .
 
 Download the RoboMaster official APP, follow the instructions to connect the robot to WiFi (only WiFi5), and connect the computer to the same WiFi to complete the connection.
 
+<div align=center>
 <img src="resources/joystick_mapping.png" alt="joystick_mapping" width=50%>
+</div>
 
 ### Step 1: Start launch file
 ```bash
@@ -152,11 +154,15 @@ source ~/RoboMatrixinstall/setup.bash
 ros2 launch robomaster_ros collect_data.launch.py name:=example idx:=1 dir:=~/RoboMatrixDatasets
 ```
 
+<div align=center>
+
 |Parameter |Definition |Example|
 |----- |----- |-----|
 |name |A custom task name |move_to_box|
 |idx |The sequence number of the current episode of the task |10|
 |dir |The folder where the data is saved | ~/MyDatasets|
+
+</div>
 
 ***NOTEs***
 1. Make sure the robot is successfully connected to the specified WIFI before launching the launch file.
@@ -216,4 +222,8 @@ If you find our work helpful, please cite us:
 
 ---
 ## WeChat
-<img src="resources/WeChat/WechatIMG2.jpg" alt="weichat" width=200><img src="resources/WeChat/WechatIMG3.jpg" alt="weichat" width=200>
+<!-- <img src="resources/WeChat/WechatIMG2.jpg" alt="weichat" width=200> -->
+<!-- <img src="resources/WeChat/WechatIMG3.jpg" alt="weichat" width=200> -->
+<div align=center>
+<img src="resources/WeChat/WeChat03.png" alt="wechat" width=300>
+</div>
