@@ -3,7 +3,9 @@
 </div>
 
 <div align="center">
-English | [简体中文](README_zh-CN.md)  
+
+English | [简体中文](README_zh-CN.md)
+
 </div>
 
 # RoboMatrix: A Skill-centric Hierarchical Framework for Scalable Robot Task Planning and Execution in Open-World
@@ -133,15 +135,13 @@ cd Grounding-DINO-1.5-API
 pip install -v -e .
 ```
 
-## Usage
-### Connect to RoboMaster
-Download the RoboMaster official APP, follow the instructions to connect the robot to WiFi (only WiFi5), and connect the computer to the same WiFi to complete the connection.
+## Data Collection
 
-### Data Collection
+Download the RoboMaster official APP, follow the instructions to connect the robot to WiFi (only WiFi5), and connect the computer to the same WiFi to complete the connection.
 
 <img src="resources/joystick_mapping.png" alt="joystick_mapping" width=50%>
 
-**Step 1: Start launch file**
+### Step 1: Start launch file
 ```bash
 source ~/RoboMatrixinstall/setup.bash
 ros2 launch robomaster_ros collect_data.launch.py name:=example idx:=1 dir:=~/RoboMatrixDatasets
@@ -153,16 +153,16 @@ ros2 launch robomaster_ros collect_data.launch.py name:=example idx:=1 dir:=~/Ro
 |idx |The sequence number of the current episode of the task |10|
 |dir |The folder where the data is saved | ~/MyDatasets|
 
-*NOTEs*
+***NOTEs***
 1. Make sure the robot is successfully connected to the specified WIFI before launching the launch file.
 2. Make sure the controller's button mode is **XBOX**, which you can view in the terminal. In the case of **BEITONG**, long press the `POWER` button to switch.
 3. Ensure that the robot initialization is complete before proceeding with the following operations.
 
-**Step 2: Start collecting**
+### Step 2: Start collecting
 
 By pressing the `START` button, the robot's status begins to be recorded and the other buttons on the handle are activated, allowing control of the robot's movement.
 
-**Step 3: Control the robot**
+### Step 3: Control the robot
 
 The control mode of the robot chassis is speed control. The `RS` axis controls the translation speed of the chassis, and the `LT` and `RT` axes control the rotation speed of the chassis.
 
@@ -170,14 +170,14 @@ The control mode of the robot arm is position control. The `HAT` key set changes
 
 The gripper control is binarized. The `A` button controls the gripper open to the maximum, and the `B` button controls the gripper closed to the maximum.
 
-**Step 4: Save data**
+### Step 4: Save data
 
 Press the `BACK` button to save the data, then press the `POWER` button to clean the ROS2 node and wait for the video to finish saving.
 
-### Task Execution
+## Task Execution
 
 
-## TODO
+## TODOs
 - [ ] Package Docker
 - [X] 🤗 Release Supervised Fine-tuning dataset
 - [ ] Optimize VLA ROS communication
