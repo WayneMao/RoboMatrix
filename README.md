@@ -21,7 +21,8 @@ English | [简体中文](README_zh-CN.md)
 
 ## 📰 Release
 
-- [2024/12/04] We have released the RoboMatrix supervised fine-tuning (SFT) dataset, which contains 1,500 high-quality human-annotated demonstration videos.
+- [2025/01/08] 🔥 We release [data collection](https://github.com/WayneMao/RoboMatrix?tab=readme-ov-file#data-collection) method.
+- [2024/12/04] 🔥 We release the RoboMatrix supervised fine-tuning (SFT) dataset containing 1,500 high-quality human-annotated demonstration videos.
 
 ## Demos
 ### Dynamic Adversarial Interaction
@@ -196,7 +197,7 @@ Comming soon.
 ## TODOs
 - [ ] Package Docker
 - [X] 🤗 Release Supervised Fine-tuning dataset
-- [ ] Optimize VLA ROS communication
+- [x] Optimize VLA ROS communication
 - [ ] Open source VLA Skill model code
 - [ ] Release VLA Skill model weights
 - [ ] Open source Shooting code
@@ -223,7 +224,7 @@ If you find our work helpful, please cite us:
 ---
 ## WeChat
 <!-- <img src="resources/WeChat/WechatIMG2.jpg" alt="weichat" width=200> -->
-<!-- <img src="resources/WeChat/WechatIMG3.jpg" alt="weichat" width=200> -->
+<!-- <img src="https://github.com/user-attachments/assets/de8efd1d-b8bc-4323-ab6b-0df8c5ecbd12" alt="weichat" width=200> -->
 <div align=center>
 <img src="resources/WeChat/WeChat03.png" alt="wechat" width=300>
 </div>
