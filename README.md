@@ -44,6 +44,9 @@ We developed RoboMatrix using the ROS2 framework on Ubuntu 20.04. You can follow
 
 We provide a general installation procedure for ROS2, this might give you some help. **If you already have it installed on your system, please skip this step.**
 
+<details close>
+<summary> <b> ROS2 Installation </b> </summary>
+
 ### Step 1: Set UTF-8
 Open a terminal, check weather your system supports UTF-8.
 ```bash
@@ -101,6 +104,8 @@ ros2 run demo_nodes_cpp listener
 ```bash
 sudo apt install python3-colcon-common-extensions
 ```
+
+</details>
 
 ## 🛠️ Installation
 ### Build workspace
