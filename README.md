@@ -179,8 +179,13 @@ The gripper control is binarized. The `A` button controls the gripper open to th
 
 Press the `BACK` button to save the data, then press the `POWER` button to clean the ROS2 node and wait for the video to finish saving.
 
+## Dataset Construction
+
+Comming soon.
+
 ## Task Execution
 
+Comming soon.
 
 ## TODOs
 - [ ] Package Docker
