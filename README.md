@@ -10,9 +10,7 @@ English | [简体中文](README_zh-CN.md)
 
 # RoboMatrix: A Skill-centric Hierarchical Framework for Scalable Robot Task Planning and Execution in Open-World
 
-<div align="center">
 ### 📝[Paper](https://arxiv.org/abs/2412.00171) | 🌍[Project Page](https://robo-matrix.github.io/) | 🛢️[Data](https://huggingface.co/datasets/WayneMao/RoboMatrix)
-</div>
   
 ![eight_skills](resources/eight_skills.gif)
 
@@ -44,7 +42,7 @@ We developed RoboMatrix using the ROS2 framework on Ubuntu 20.04. You can follow
 We provide a general installation procedure for ROS2, this might give you some help. **If you already have it installed on your system, please skip this step.**
 
 ### Step 1: Set UTF-8.
-Open a terminal，check weather your system supports UTF-8.
+Open a terminal, check weather your system supports UTF-8.
 ```bash
 locale
 ```
@@ -56,7 +54,7 @@ export LANG=en_US.UTF-8
 ```
 
 ### Step 2: Set Ubuntu Universe.
-Open a terminal，check weather your system supports Ubuntu Universe.
+Open a terminal, check weather your system supports Ubuntu Universe.
 ```bash
 apt-cache policy | grep universe
 ```
@@ -104,33 +102,40 @@ sudo apt install python3-colcon-common-extensions
 ## 🛠️ Installation
 ### Build workspace
 ```bash
-mkdir -p ~/RoboMatrix/src && cd ~/RoboMatrix/src
 git clone https://github.com/WayneMao/RoboMatrix.git
 cd ~/RoboMatrix && colcon build
 ```
 
-### Install dependencies
+### RoboMaster SDK
+Install dependencies.
 ```bash
 sudo apt install libopus-dev python3-pip
 python3 -m pip install -U numpy numpy-quaternion pyyaml
-
-# Install RoboMaster-SDK
+```
+Install from source code.
+```bash
 python3 -m pip install git+https://github.com/jeguzzi/RoboMaster-SDK.git
 python3 -m pip install git+https://github.com/jeguzzi/RoboMaster-SDK.git#"egg=libmedia_codec&subdirectory=lib/libmedia_codec"
+```
 
-# install dependencies and torch
+### Dependencies
+```bash
 pip install -r requirements.txt
 pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
 ```
-### Third party
-**Grounding-DINO-1.5-API**
+
+### Grounding-DINO-1.5-API
 ```bash
-cd src/robomatrix_client/robomatrix_client
+cd ~/RoboMatrix/robomatrix_client/robomatrix_client
 git clone https://github.com/IDEA-Research/Grounding-DINO-1.5-API.git
 cd Grounding-DINO-1.5-API
 pip install -v -e .
 ```
-## Deployment on Real-Robots
+
+## Usage
+### Data Collection
+
+### VLA Inference
 
 ## TODO
 - [ ] Package Docker
@@ -155,7 +160,7 @@ If you find our work helpful, please cite us:
 
 ## Acknowledgments
 - Implementation of Vision-Language-Action (VLA) skill model is based on [LLaVA](https://github.com/haotian-liu/LLaVA/).  
-- RoboMatrix-ROS is based on [RoboMaster-SDK](https://github.com/dji-sdk/RoboMaster-SDK) and [ROS2](https://github.com/ros2).
+- RoboMatrix-ROS is based on official [RoboMaster-SDK](https://github.com/dji-sdk/RoboMaster-SDK), modified [RoboMaster-SDK](https://github.com/jeguzzi/RoboMaster-SDK) and [ROS2](https://github.com/ros2).
 - Some additional libraries: [Grounding-DINO-1.5](https://github.com/IDEA-Research/Grounding-DINO-1.5-API), [YOLO-World](https://github.com/AILab-CVC/YOLO-World).
 
 
