@@ -3,20 +3,21 @@
 </div>
 
 <div align="center">
-
 English | [简体中文](README_zh-CN.md)  
-
 </div>
 
 # RoboMatrix: A Skill-centric Hierarchical Framework for Scalable Robot Task Planning and Execution in Open-World
 
-### 📝[Paper](https://arxiv.org/abs/2412.00171) | 🌍[Project Page](https://robo-matrix.github.io/) | 🛢️[Data](https://huggingface.co/datasets/WayneMao/RoboMatrix)
+## 📝[Paper](https://arxiv.org/abs/2412.00171) | 🌍[Project Page](https://robo-matrix.github.io/) | 🛢️[Data](https://huggingface.co/datasets/WayneMao/RoboMatrix)
   
-![eight_skills](resources/eight_skills.gif)
+<!-- ![eight_skills](resources/eight_skills.gif) -->
+<div align="center">
+    <img src="resources/eight_skills.gif" alt="demo" width="95%">
+</div>
 
 <!-- ## 📰 News -->
 
-## Release
+## 📰 Release
 
 - [2024/12/04] We have released the RoboMatrix supervised fine-tuning (SFT) dataset, which contains 1,500 high-quality human-annotated demonstration videos.
 
@@ -41,7 +42,7 @@ We developed RoboMatrix using the ROS2 framework on Ubuntu 20.04. You can follow
 
 We provide a general installation procedure for ROS2, this might give you some help. **If you already have it installed on your system, please skip this step.**
 
-### Step 1: Set UTF-8.
+### Step 1: Set UTF-8
 Open a terminal, check weather your system supports UTF-8.
 ```bash
 locale
@@ -53,7 +54,7 @@ sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 export LANG=en_US.UTF-8
 ```
 
-### Step 2: Set Ubuntu Universe.
+### Step 2: Set Ubuntu Universe
 Open a terminal, check weather your system supports Ubuntu Universe.
 ```bash
 apt-cache policy | grep universe
@@ -64,27 +65,27 @@ sudo apt install software-properties-common
 sudo add-apt-repository universe
 ```
 
-### Step 3: Add ROS2 software source and key.
+### Step 3: Add ROS2 software source and key
 ```bash
 sudo apt update && sudo apt install curl gnupg2 lsb-release
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 ```
 
-### Step 4: Get ROS2.
+### Step 4: Get ROS2
 Install the specified version of ROS2, using **Foxy** as an example.
 ```bash
 sudo apt update
 sudo apt install ros-foxy-desktop
 ```
 
-### Step 5: Source bash.
+### Step 5: Source bash
 ```bash
 echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
 source .bashrc
 ```
 
-### Step 6: Test demo.
+### Step 6: Test demo
 Open a terminal, start talker node.
 ```bash
 ros2 run demo_nodes_cpp talker
@@ -94,7 +95,7 @@ Open a new terminal, start listener node.
 ros2 run demo_nodes_cpp listener
 ```
 
-### Step 7: Install colcon.
+### Step 7: Install colcon
 ```bash
 sudo apt install python3-colcon-common-extensions
 ```
@@ -112,7 +113,7 @@ Install dependencies.
 sudo apt install libopus-dev python3-pip
 python3 -m pip install -U numpy numpy-quaternion pyyaml
 ```
-Install from source code.
+Install SDK from source code.
 ```bash
 python3 -m pip install git+https://github.com/jeguzzi/RoboMaster-SDK.git
 python3 -m pip install git+https://github.com/jeguzzi/RoboMaster-SDK.git#"egg=libmedia_codec&subdirectory=lib/libmedia_codec"
@@ -133,9 +134,48 @@ pip install -v -e .
 ```
 
 ## Usage
+### Connect to RoboMaster
+Download the RoboMaster official APP, follow the instructions to connect the robot to WiFi (only WiFi5), and connect the computer to the same WiFi to complete the connection.
+
 ### Data Collection
 
-### VLA Inference
+<img src="resources/joystick_mapping.png" alt="joystick_mapping" width=50%>
+
+**Step 1: Start launch file**
+```bash
+source ~/RoboMatrixinstall/setup.bash
+ros2 launch robomaster_ros collect_data.launch.py name:=example idx:=1 dir:=~/RoboMatrixDatasets
+```
+
+|Parameter |Definition |Example|
+|----- |----- |-----|
+|name |A custom task name |move_to_box|
+|idx |The sequence number of the current episode of the task |10|
+|dir |The folder where the data is saved | ~/MyDatasets|
+
+*NOTEs*
+1. Make sure the robot is successfully connected to the specified WIFI before launching the launch file.
+2. Make sure the controller's button mode is **XBOX**, which you can view in the terminal. In the case of **BEITONG**, long press the `POWER` button to switch.
+3. Ensure that the robot initialization is complete before proceeding with the following operations.
+
+**Step 2: Start collecting**
+
+By pressing the `START` button, the robot's status begins to be recorded and the other buttons on the handle are activated, allowing control of the robot's movement.
+
+**Step 3: Control the robot**
+
+The control mode of the robot chassis is speed control. The `RS` axis controls the translation speed of the chassis, and the `LT` and `RT` axes control the rotation speed of the chassis.
+
+The control mode of the robot arm is position control. The `HAT` key set changes the position of the end of the robot arm in the plane. Each press moves its position a fixed distance in the specified direction.
+
+The gripper control is binarized. The `A` button controls the gripper open to the maximum, and the `B` button controls the gripper closed to the maximum.
+
+**Step 4: Save data**
+
+Press the `BACK` button to save the data, then press the `POWER` button to clean the ROS2 node and wait for the video to finish saving.
+
+### Task Execution
+
 
 ## TODO
 - [ ] Package Docker
