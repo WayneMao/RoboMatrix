@@ -85,13 +85,33 @@ If you find our work helpful, please cite us:
 
 ```bibtex
 @article{mao2024robomatrix,
-  title={RoboMatrix: A Skill-centric Hierarchical Framework for Scalable Robot Task Planning and Execution in Open-World},
-  author={Mao, Weixin and Zhong, Weiheng and Jiang, Zhou and Fang, Dong and Zhang, Zhongyue and Lan, Zihan and Jia, Fan and Wang, Tiancai and Fan, Haoqiang and Yoshie, Osamu},
+  title={Robomatrix: A skill-centric hierarchical framework for scalable robot task planning and execution in open-world},
+  author={Mao, Weixin and Zhong, Weiheng and Jiang, Zhou and Fang, Dong and Zhang, Zhongyue and Lan, Zihan and Li, Haosheng and Jia, Fan and Wang, Tiancai and Fan, Haoqiang and others},
   journal={arXiv preprint arXiv:2412.00171},
   year={2024}
 }
 ```
 
+## 招聘
+具身智能-具身大模型算法研究实习生
+职位描述
+1. 参与多模态理解与生成大模型、VLA大模型所需的数据清洗和自动标注系统开发，确保各类型/模态数据的质量与多样性；
+2. 探索高效的数据增强和数据合成方法，例如图像/视频编辑；
+3. 对机器人平台实现算法的部署和调试，提高机器人策略效率；
+4. 对前沿具身算法进行研究探索，包括不限于VLA、RDT、Pi0等；
+5. 我们提供有力的研究指导，进行论文发表；
+职位要求
+1、实习时间至少6个月，每周保证4天以上实习
+2、硕士及以上学历在读，计算机、自动化等相关专业优先；
+3、具备较强的软件工程能力，熟练使用Python、pytorch，熟悉Linux操作系统；
+4、熟悉并行化编程，熟悉三维坐标变换、计算机视觉基础知识，了解机器人运动学；
+5、有较好的英文科技文献阅读及算法复现的能力；
+6、有实际的机器人开发经验优先，有大规模数据生成与处理经验优先；
+
+工作地点：北京·中关村，逐际动力北京实验室  
+申请方式：请将你的简历以及相关项目/研究的介绍发送至 waynemao@limxdynamics.com ，简历格式：实习_姓名_学校_方向.pdf  
+PS. 同时也招收**物理仿真实习生，视频生成/世界模型实习生，运动控制实习生**， 还有少量全职HC。  
+PPS. 请简历优先投递邮箱，走内推通道  
 ## 致谢
 - 视觉-语言-动作 (VLA) 技能模型的实现基于 [LLaVA](https://github.com/haotian-liu/LLaVA/)。  
 - RoboMatrix-ROS 基于 [RoboMaster-SDK](https://github.com/dji-sdk/RoboMaster-SDK) 和 [ROS2](https://github.com/ros2)。
